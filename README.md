@@ -20,12 +20,12 @@ Ce dépôt contient la première itération du projet "Pharma", une application 
 2.  **Cloner le dépôt :**
 
     ```bash
-    git clone [https://github.com/votre_utilisateur/Pharma1.git](https://github.com/votre_utilisateur/Pharma1.git)
+    git clone https://github.com/sidonieGit/pharma-Demo1.git
     cd Pharma1
     ```
 
 3.  **Compiler le code :**
-    Étant donné que ce projet n'utilise pas Maven pour sa construction (il est recommandé de le convertir en projet Maven si ce n'est pas déjà fait pour les prochaines démos), vous devrez compiler manuellement les fichiers Java.
+    Vous devrez compiler manuellement les fichiers Java.
 
     - **Si vous utilisez un IDE (IntelliJ IDEA, Eclipse, VS Code) :** Importez le dossier `Pharma1` comme un projet Java. Votre IDE devrait gérer la compilation automatiquement. Exécutez la classe `com.sidoCop.sysPharma.launcher.Laucher`.
 
@@ -36,7 +36,6 @@ Ce dépôt contient la première itération du projet "Pharma", une application 
       cd src/main/java
       javac com/sidoCop/sysPharma/launcher/Laucher.java com/sidoCop/sysPharma/service/ServiceMedicament.java com/sidoCop/sysPharma/dao/MedicamentDAO.java com/sidoCop/sysPharma/domaine/model/Medicament.java com/sidoCop/sysPharma/domaine/model/Categorie.java
       ```
-      _(Note: Cette commande `javac` peut devenir longue avec de nombreux fichiers. L'utilisation d'un IDE ou de Maven est fortement recommandée.)_
 
 4.  **Exécuter l'application :**
 
@@ -50,11 +49,9 @@ Ce dépôt contient la première itération du projet "Pharma", une application 
       ```
       Vous devriez voir les messages de console indiquant la création et la récupération des médicaments.
 
-## Prochaines Étapes Possibles
+## Prochaines Étapes
 
-- Conversion du projet en projet Maven pour une gestion des dépendances et un build standardisé.
-- Passage à une implémentation DAO réelle avec une base de données (JDBC).
-- Introduction de Spring Framework pour l'injection de dépendances et la gestion des transactions.
+- Introduction de l'injection de dépendances sans framework (Spring)
 
 ---
 
